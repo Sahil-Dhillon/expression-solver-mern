@@ -80,7 +80,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get('/getData')
+        const result = await axios.get('https://expression-solver.herokuapp.com/getData')
         console.log(result.data)
         setData(result.data)
       } catch (error) {
